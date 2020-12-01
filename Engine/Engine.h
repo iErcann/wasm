@@ -29,6 +29,7 @@ namespace MO3D
         bool run;
         GLFWwindow *window;
         float videoWidth, videoHeight;
+        ImGuiContext *imgui;
     };
     static Engine& Core = Engine::GetInstance();
 
