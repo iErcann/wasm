@@ -1,1 +1,2 @@
-void CherryTheme();
+
+void Windows95Theme();

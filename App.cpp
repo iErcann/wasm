@@ -6,7 +6,7 @@
 
 #define GLFW_INCLUDE_ES3
 #include <GLES3/gl3.h>
-#include <GLFW/glfw3.h> 
+#include <GLFW/glfw3.h>
 
 #include <chrono>
 #include <ctime>
@@ -17,30 +17,24 @@
 
 #include "Engine/Engine.h"
 
-EM_JS(int, canvas_get_width, (), {
-  return Module.canvas.width; 
-});
-
-EM_JS(int, canvas_get_height, (), {
-  return Module.canvas.height;
-});
-
 EM_JS(void, resizeCanvas, (), {
   js_resizeCanvas();
-}); 
+});
 
-
-void loop(){ 
-    MO3D::Core.Update(); 
+void loop()
+{
+  MO3D::Core.Update();
 }
 extern "C" int main(int argc, char **argv)
 {
-    MO3D::Core.Initialize();
-#ifdef __EMSCRIPTEN__
-    emscripten_set_main_loop(loop, 0, 1);
-#endif
-    MO3D::Core.Quit();
-    return 0;
-}
-
+  std::cout<<"Main lancé"<<std::endl;
  
+ 
+
+  MO3D::Core.Initialize();
+#ifdef __EMSCRIPTEN__
+  emscripten_set_main_loop(loop, 0, 1);
+#endif
+  MO3D::Core.Quit();
+  return 0;
+}

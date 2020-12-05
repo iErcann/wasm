@@ -205,7 +205,7 @@ int init()
   // Setup style
   //ImGui::StyleColorsDark();
   //ImGui::StyleColorsClassic();
-  CherryTheme();
+  Windows95Theme();
 
   imgui = ImGui::GetCurrentContext();
 
