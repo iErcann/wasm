@@ -14,7 +14,7 @@ USE_WASM = -s WASM=1
 all: $(SOURCES) $(OUTPUT)
 
 $(OUTPUT): $(SOURCES) 
-	$(CXX) -Wall $(SOURCES) -std=c++11 -o $(OUTPUT) $(LIBS) $(WEBGL_VER) -O2 --preload-file data $(USE_WASM) -I$(IMGUI_DIR) -Iressources -lopenal
+	$(CXX)   -Wall $(SOURCES) -std=c++11 -o $(OUTPUT) $(LIBS) $(WEBGL_VER) -O2 --preload-file data $(USE_WASM) -I$(IMGUI_DIR) -Iressources  
 	
 
 

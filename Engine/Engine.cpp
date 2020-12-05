@@ -2,12 +2,39 @@
 #include <GLES3/gl3.h>
 #include <GLFW/glfw3.h>
 
+#include <SDL/SDL.h>
+#include <SDL/SDL_mixer.h>
+
 #include "imgui.h"
 #include "../imgui_impl_glfw.h"
 #include "../imgui_impl_opengl3.h"
 
 #include "../config.h"
 #include "Engine.h"
+
+Mix_Chunk *sound, *sound2, *sound3;
+Mix_Music *music;
+
+void done(int channel)
+{
+}
+
+int play3()
+{
+    int channel3 = Mix_PlayChannel(-1, sound3, 0);
+    return channel3;
+}
+int play2()
+{
+    int channel2 = Mix_PlayChannel(-1, sound2, 0);
+    return channel2;
+}
+
+int play()
+{
+    int channel = Mix_PlayChannel(-1, sound, 0);
+    return channel;
+}
 
 namespace MO3D
 {
@@ -49,7 +76,16 @@ namespace MO3D
         glfwSetKeyCallback(window, ImGui_ImplGlfw_KeyCallback);
         glfwSetCharCallback(window, ImGui_ImplGlfw_CharCallback);
 
-  
+        SDL_Init(SDL_INIT_AUDIO);
+        int ret = Mix_OpenAudio(0, 0, 0, 0); // we ignore all these..
+
+        sound = Mix_LoadWAV("data/hihat.wav");
+        sound2 = Mix_LoadWAV("data/snare.wav");
+        sound3 = Mix_LoadWAV("data/Space.wav");
+
+        int channel = play();
+        int paused = Mix_Paused(channel);
+
     }
     void Engine::Update()
     {
@@ -66,10 +102,24 @@ namespace MO3D
         bool show_demo_window = false;
         ImGui::ShowDemoWindow(&show_demo_window);
 
-         bool showW  = true;
+        bool showW = true;
         ImGui::Begin("Another Window", &showW);
         ImGui::Text("Hello from another window!");
-        ImGui::Button("Close Me");
+        if (ImGui::Button("Hi Hat"))
+        {
+            play();
+        }
+
+        if (ImGui::Button("Snare"))
+        {
+            play2();
+        }
+
+
+        if (ImGui::Button("808"))
+        {
+            play3();
+        }
         ImGui::End();
         ImGui::Render();
 
