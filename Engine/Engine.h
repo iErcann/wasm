@@ -2,6 +2,8 @@
 #define GLFW_INCLUDE_ES3
 #include <GLES3/gl3.h>
 #include <GLFW/glfw3.h>
+#include "./Window/ChildWindow.h"
+#include <vector>
 
 namespace MO3D
 {
@@ -20,22 +22,24 @@ namespace MO3D
         void Update();
         void Initialize();
 
-        inline const bool Run() const { return run; }
-        inline GLFWwindow *Window() { return window; }
+        inline const bool Run() const { return bRun; }
+        inline GLFWwindow *Window() { return mWindow; }
         inline const float VideoWidth() const
         {
-            return videoWidth;
+            return mVideoWidth;
         }
         inline const float VideoHeight() const
         {
-            return videoHeight;
+            return mVideoHeight;
         }
 
     private:
-        bool run;
-        GLFWwindow *window;
-        float videoWidth, videoHeight;
-        ImGuiContext *imgui;
+        bool bRun;
+        GLFWwindow *mWindow;
+        std::vector<ChildWindow> mChildWindows;
+        float mVideoWidth, mVideoHeight;
+        ImGuiContext *mImguiContext;
+
     };
     static Engine &Core = Engine::GetInstance();
 
