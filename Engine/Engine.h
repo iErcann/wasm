@@ -35,10 +35,10 @@ namespace MO3D
 
     private:
         bool bRun;
-        GLFWwindow *mWindow;
+        GLFWwindow* mWindow;
         std::vector<ChildWindow*> mChildWindows;
         float mVideoWidth, mVideoHeight;
-        ImGuiContext *mImguiContext;
+        ImGuiContext* mImguiContext;
 
     };
     static Engine &Core = Engine::GetInstance();
