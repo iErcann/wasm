@@ -12,7 +12,6 @@
 #include "../config.h"
 #include "Engine.h"
 #include "MalStudio/MalStudio.h"
-
 Mix_Chunk *sound, *sound2, *sound3;
 Mix_Music *music;
 
@@ -86,9 +85,10 @@ namespace MO3D
         int channel = play();
         int paused = Mix_Paused(channel);
 
-        for (int i = 0; i < 10; i++)
-        {
-            MalStudio childWindow(i, 10.0, std::to_string(i));
+        for (float i = 0; i < 20; i++) {
+            std::string s =  "ZEM OEM NOE";
+            std::string d = s+(char)i;
+            MalStudio childWindow(i, i, d);
             mChildWindows.push_back(&childWindow);
         }
     }
@@ -102,9 +102,9 @@ namespace MO3D
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        for (ChildWindow* &childWindow : mChildWindows)
+        for (auto &childWindow : mChildWindows)
         {
-            (*childWindow).Show();
+            childWindow->Show();
         }
         bool show_demo_window = false;
         ImGui::ShowDemoWindow(&show_demo_window);
