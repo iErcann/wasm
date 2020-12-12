@@ -11,6 +11,7 @@
 
 #include "../config.h"
 #include "Engine.h"
+#include "MalStudio/MalStudio.h"
 
 Mix_Chunk *sound, *sound2, *sound3;
 Mix_Music *music;
@@ -38,7 +39,7 @@ int play()
 
 namespace MO3D
 {
-    Engine::Engine() : bRun(true), mWindow(NULL), mVideoWidth(1600), mVideoHeight(900)
+    Engine::Engine() : bRun(true), mWindow(NULL), mVideoWidth(1900), mVideoHeight(1000)
     {
     }
     void Engine::Initialize()
@@ -64,7 +65,6 @@ namespace MO3D
         ImGui_ImplGlfw_InitForOpenGL(mWindow, false);
         ImGui_ImplOpenGL3_Init();
 
-        // Setup style
         //ImGui::StyleColorsDark();
         //ImGui::StyleColorsClassic();
         Windows95Theme();
@@ -85,10 +85,11 @@ namespace MO3D
 
         int channel = play();
         int paused = Mix_Paused(channel);
+
         for (int i = 0; i < 10; i++)
         {
-            ChildWindow childWindow(i, 10.0, std::to_string(i));
-            mChildWindows.push_back(childWindow);
+            MalStudio childWindow(i, 10.0, std::to_string(i));
+            mChildWindows.push_back(&childWindow);
         }
     }
     void Engine::Update()
@@ -97,15 +98,13 @@ namespace MO3D
         int height = VideoHeight();
 
         glfwSetWindowSize(mWindow, width, height);
-
         ImGui::SetCurrentContext(mImguiContext);
-
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        for (ChildWindow &childWindow : mChildWindows)
+        for (ChildWindow* &childWindow : mChildWindows)
         {
-            childWindow.Show();
+            (*childWindow).Show();
         }
         bool show_demo_window = false;
         ImGui::ShowDemoWindow(&show_demo_window);

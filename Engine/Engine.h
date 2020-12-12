@@ -36,7 +36,7 @@ namespace MO3D
     private:
         bool bRun;
         GLFWwindow *mWindow;
-        std::vector<ChildWindow> mChildWindows;
+        std::vector<ChildWindow*> mChildWindows;
         float mVideoWidth, mVideoHeight;
         ImGuiContext *mImguiContext;
 

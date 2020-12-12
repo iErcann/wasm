@@ -2,7 +2,7 @@ CXX = emcc
 OUTPUT = imgui.js
 IMGUI_DIR:=../imgui
 
-SOURCES = App.cpp Engine/Engine.cpp Engine/Audio/AudioPlayer.cpp Engine/Window/ChildWindow.cpp config.cpp
+SOURCES = App.cpp Engine/Engine.cpp Engine/Audio/AudioPlayer.cpp Engine/Window/ChildWindow.cpp config.cpp Engine/MalStudio/MalStudio.cpp
 SOURCES += imgui_impl_glfw.cpp imgui_impl_opengl3.cpp
 SOURCES += $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_demo.cpp $(IMGUI_DIR)/imgui_widgets.cpp
 
