@@ -8,11 +8,10 @@
 class ChildWindow
 {
 public:
-    explicit ChildWindow(float x, float y, std::string title);
+    ChildWindow(float x, float y, std::string title);
     void Show();
     virtual void Body() = 0;
     virtual ~ChildWindow() = 0;
-
 public:
     bool bShow;
     std::string mTitle;

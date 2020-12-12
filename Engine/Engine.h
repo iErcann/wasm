@@ -2,7 +2,7 @@
 #define GLFW_INCLUDE_ES3
 #include <GLES3/gl3.h>
 #include <GLFW/glfw3.h>
-#include "./Window/ChildWindow.h"
+#include "Window/ChildWindow.h"
 #include <vector>
 
 namespace MO3D

@@ -3,6 +3,7 @@
 #include "../imgui_impl_glfw.h"
 #include "../imgui_impl_opengl3.h"
 #include <iostream>
+#include <stdlib.h>     /* srand, rand */
 #include <string>
 
 ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : mX(pX), mY(pY), mTitle(pTitle)
@@ -16,26 +17,18 @@ ChildWindow::~ChildWindow()
 }
 
  
-
+/*
 void ChildWindow::Show()
 {
+
     bool showW = true;
     printf("ChildWindow Title %s\n", mTitle.c_str());
+
     std::string s = std::to_string(mX);
-    ImGui::Begin(s.c_str(),&showW);
+    ImGui::Begin("s.c_str()",&showW);
     ImGui::Text("slt");
     ImGui::End();
 
-    /*
-    ImGui::Begin(mTitle.c_str()+'\0', &showW);
-    ImGui::Text("mTitle.c_str()");
-    //Body();
-    ImGui::End();
-    */
-    /* ImGui::Text("Hello from another window!");
-    if (ImGui::Button("Hi Hat"))
-    {
-        std::cout << "does it work?" << std::endl;
-     }*/ 
 
 }
+*/
