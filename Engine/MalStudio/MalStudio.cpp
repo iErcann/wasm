@@ -1,5 +1,6 @@
 #include "../Window/ChildWindow.h"
 #include "MalStudio.h"
+#include "imgui.h"
 
 
 MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, title){
@@ -8,4 +9,6 @@ MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, tit
 }
 void MalStudio::Body()  {
     std::cout<<"this my body"<<std::endl;
+    static float begin = 10, end = 90;
+    ImGui::DragFloatRange2("range", &begin, &end, 0.25f, 0.0f, 100.0f, "Min: %.1f %%", "Max: %.1f %%");
 }

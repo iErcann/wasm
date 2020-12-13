@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>     /* srand, rand */
 #include <string>
+#include "imgui.h"
 
 ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : bShow(true), mTitle(pTitle), mX(pX), mY(pY)
 {
@@ -9,25 +10,9 @@ ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : bShow(true), 
     printf("ChildWindow %s\n", mTitle.c_str());
 }
 
-
 void ChildWindow::Show(){
     ImGui::Begin(mTitle.c_str(),&bShow);
     Body();
     ImGui::End();
 
  }
-/*
-void ChildWindow::Show()
-{
-
-    bool showW = true;
-    printf("ChildWindow Title %s\n", mTitle.c_str());
-
-    std::string s = std::to_string(mX);
-    ImGui::Begin("s.c_str()",&showW);
-    ImGui::Text("slt");
-    ImGui::End();
-
-
-}
-*/

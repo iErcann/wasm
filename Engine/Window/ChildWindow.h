@@ -5,11 +5,12 @@
 #include <iostream>
 #include <string>
 
+
 class ChildWindow
 {
 public:
     ChildWindow(float x, float y, std::string title);
-    void Show() = 0;
+    void Show();
     virtual void Body() = 0;
 public:
     bool bShow;
