@@ -71,21 +71,13 @@ int MalStudio::PlaySound(Mix_Chunk* sound) const {
 
 void MalStudio::Body() {
     ImGuiIO& io = ImGui::GetIO();
-    ImGui::Text("Keys pressed:");
     for (int i = 0; i < IM_ARRAYSIZE(io.KeysDown); i++) {
         if (ImGui::IsKeyPressed(i)) {
-            ImGui::SameLine();
+            printf("%d", i);
             ImGui::Text("%d (0x%X)", i, i);
         }
     }
 
-    if (ImGui::IsKeyPressed('A')) {
-        printf("qsd aze qsd ");
-        OnKeyInput();
-    }
-    if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Space))) {
-        printf("qsd aze qsd ");
-    }
     for (int i = 0; i < keyNotes.size(); i++){
         ImGui::SameLine(i*30);
         std::string label =  std::to_string(i);
