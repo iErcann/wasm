@@ -1,22 +1,27 @@
 #include "ChildWindow.h"
-#include "imgui.h"
-#include "../imgui_impl_glfw.h"
-#include "../imgui_impl_opengl3.h"
 #include <iostream>
 #include <stdlib.h>     /* srand, rand */
 #include <string>
 
-ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : mX(pX), mY(pY), mTitle(pTitle)
+ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : bShow(true), mTitle(pTitle), mX(pX), mY(pY)
 {
     printf("ChildWindow %s\n", pTitle.c_str());
     printf("ChildWindow %s\n", mTitle.c_str());
 }
 
-ChildWindow::~ChildWindow()
-{
-}
 
- 
+/*
+void ChildWindow::Show(){
+    bool showW = true;
+    printf("%s\n", mTitle.c_str());
+    Body();
+
+    ImGui::Begin(mTitle.c_str(),&showW);
+    ImGui::Text("slt");
+    ImGui::End();
+
+ }
+ */
 /*
 void ChildWindow::Show()
 {

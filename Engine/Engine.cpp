@@ -12,7 +12,6 @@
 #include "../config.h"
 #include "Engine.h"
 #include "MalStudio/MalStudio.h"
-#include "Window/ChildWindow.h"
 
 Mix_Chunk *sound, *sound2, *sound3;
 Mix_Music *music;
@@ -90,8 +89,10 @@ namespace MO3D
         for (float i = 0; i < 2; i++) {
             std::string s =  "ZEM OEM NOE";
             std::string d = std::to_string(i);
-            MalStudio childWindow(i, i, s+d);
-            mChildWindows.push_back(&childWindow);
+            //MalStudio childWindow(i, i, s+d);
+            mChildWindows.push_back(new MalStudio(i, i, s+d));
+
+            // Il faut le delete!
         }
 
 
@@ -112,7 +113,6 @@ namespace MO3D
         {
             childWindow->Show();
         }
-
         bool show_demo_window = false;
         ImGui::ShowDemoWindow(&show_demo_window);
         ImGui::Render();
