@@ -70,7 +70,9 @@ int MalStudio::PlaySound(Mix_Chunk* sound) const {
 }
 
 void MalStudio::Body()  {
-    std::cout<<"this my body"<<std::endl;
+    if (ImGui::IsWindowFocused()){
+        OnKeyInput();
+    }
     for (int i = 0; i < keyNotes.size(); i++){
         ImGui::SameLine(i*30);
         std::string label =  std::to_string(i);
@@ -82,4 +84,8 @@ void MalStudio::Body()  {
     }
     static float begin = 10, end = 90;
     ImGui::DragFloatRange2("range", &begin, &end, 0.25f, 0.0f, 100.0f, "Min: %.1f %%", "Max: %.1f %%");
+}
+
+void MalStudio::OnKeyInput(){
+    printf("%s", mTitle);
 }
