@@ -86,7 +86,7 @@ namespace MO3D
         int channel = play();
         int paused = Mix_Paused(channel);
 
-        for (float i = 0; i < 2; i++) {
+        for (float i = 0; i < 1; i++) {
             std::string s =  "ZEM OEM NOE";
             std::string d = std::to_string(i);
             //MalStudio childWindow(i, i, s+d);

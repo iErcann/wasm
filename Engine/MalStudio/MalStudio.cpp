@@ -12,6 +12,8 @@
 
 MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, title){
     SDL_Init(SDL_INIT_AUDIO);
+    Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, 2, 12);
+
     printf("MalStudio %s\n", title.c_str());
     printf("MalStudio  %s\n", mTitle.c_str());
 
@@ -28,7 +30,6 @@ MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, tit
 			}
 			addKey("c", 7);
      */
-
 
     std::vector<std::string> keys;
     keys.push_back("c");
@@ -50,42 +51,60 @@ MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, tit
              char fileName[20];
              std::sprintf(fileName, "%s%d.wav", keys[i].c_str(), j);
              char filePath[40];
-             printf("%d: ", ++c);
+             printf("%d: ", c);
              std::sprintf(filePath, "../../data/pianoMPP/%s", fileName);
              printf("%s\n", filePath);
              Mix_Chunk* sound = Mix_LoadWAV(filePath);
              KeyNote keyNote = {
                      .label = fileName,
-                     .sound = sound
+                     .sound = sound,
              };
              keyNotes.push_back(keyNote);
+             c++;
 
          }
     }
 
 }
-int MalStudio::PlaySound(Mix_Chunk* sound) const {
-    int channel = Mix_PlayChannel(-1, sound, 0);
+
+
+int MalStudio::PlaySound(KeyNote keyNote) const {
+    int channel = Mix_PlayChannel(-1, keyNote.sound, 0);
     return channel;
 }
 
+
+
 void MalStudio::Body() {
     ImGuiIO& io = ImGui::GetIO();
+
     for (int i = 0; i < IM_ARRAYSIZE(io.KeysDown); i++) {
-        if (ImGui::IsKeyReleased(i)) {
-            PlaySound(keyNotes[i-65].sound);
-            printf("KEY : %d\n", i);
+        if (ImGui::IsKeyPressed(i) && !keyNotes[i-30].pressed ) {
+            keyNotes[i-30].pressed = true;
+
+            int channel = PlaySound(keyNotes[i-30]);
+            keyNotes[i-30].channel = channel;
+
+            printf("KEY : %d, CHANNEL: %d\n", i, channel);
+        } else if (ImGui::IsKeyReleased(i)){
+            keyNotes[i-30].pressed = false;
+            Mix_HaltChannel(keyNotes[i-30].channel);
         }
     }
+
 
     for (int i = 0; i < keyNotes.size(); i++){
         ImGui::SameLine(i*30);
         std::string label =  std::to_string(i);
+
+        int b = keyNotes[i].pressed?150:255;
+        ImGui::PushStyleColor(ImGuiCol_Button, IM_COL32(255, 255, b, 255));
         if (ImGui::Button(keyNotes[i].label.c_str(), ImVec2(25.0f, 150.0f)))
         {
-            PlaySound(keyNotes[i].sound);
+            PlaySound(keyNotes[i]);
             printf("Pressed button: %s", keyNotes[i].label.c_str());
         }
+        ImGui::PopStyleColor(1);
     }
     static float begin = 10, end = 90;
     ImGui::DragFloatRange2("range", &begin, &end, 0.25f, 0.0f, 100.0f, "Min: %.1f %%", "Max: %.1f %%");

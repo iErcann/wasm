@@ -10,11 +10,12 @@ class MalStudio : public ChildWindow {
     public:
         MalStudio(float x, float y, std::string title);
         void Body() override;
-        int PlaySound(Mix_Chunk* sound) const;
+        int PlaySound(KeyNote keynote) const;
         void OnKeyInput();
 
     private:
         std::vector<KeyNote> keyNotes;
+
 };
 
 

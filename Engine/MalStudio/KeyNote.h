@@ -8,8 +8,11 @@
 #include <SDL/SDL_mixer.h>
 
 struct KeyNote {
-    std::string label;
+    std::string label; // Key label
+    int channel; // Played channel
     Mix_Chunk* sound;
+    bool pressed;
+    int keyCode;
 };
 
 
