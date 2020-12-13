@@ -4,6 +4,7 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_mixer.h>
 #include <vector>
+#include "KeyNote.h"
 
 class MalStudio : public ChildWindow {
     public:
@@ -11,7 +12,7 @@ class MalStudio : public ChildWindow {
         void Body() override;
         int PlaySound(Mix_Chunk* sound) const;
     private:
-        std::vector<Mix_Chunk*> sounds;
+        std::vector<KeyNote> keyNotes;
         Mix_Chunk* sound;
 
 };
