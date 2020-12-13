@@ -5,7 +5,6 @@
 class MalStudio : public ChildWindow {
     public:
         MalStudio(float x, float y, std::string title);
-        void Show() override;
         void Body() override;
 };
 

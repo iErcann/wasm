@@ -9,7 +9,7 @@ class ChildWindow
 {
 public:
     ChildWindow(float x, float y, std::string title);
-    virtual void Show() = 0;
+    void Show() = 0;
     virtual void Body() = 0;
 public:
     bool bShow;

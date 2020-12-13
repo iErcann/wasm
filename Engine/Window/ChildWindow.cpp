@@ -10,18 +10,12 @@ ChildWindow::ChildWindow(float pX, float pY, std::string pTitle) : bShow(true), 
 }
 
 
-/*
 void ChildWindow::Show(){
-    bool showW = true;
-    printf("%s\n", mTitle.c_str());
+    ImGui::Begin(mTitle.c_str(),&bShow);
     Body();
-
-    ImGui::Begin(mTitle.c_str(),&showW);
-    ImGui::Text("slt");
     ImGui::End();
 
  }
- */
 /*
 void ChildWindow::Show()
 {
