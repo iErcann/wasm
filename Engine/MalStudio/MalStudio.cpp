@@ -13,9 +13,10 @@
 MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, title){
     SDL_Init(SDL_INIT_AUDIO);
     Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, 2, 12);
-
+    clock =  std::chrono::system_clock::now();
     printf("MalStudio %s\n", title.c_str());
     printf("MalStudio  %s\n", mTitle.c_str());
+    keyNoteIndex = 0;
 
     /*
      * 		} else {
@@ -65,6 +66,8 @@ MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, tit
          }
     }
 
+
+
 }
 
 
@@ -77,7 +80,22 @@ int MalStudio::PlaySound(KeyNote keyNote) const {
 
 void MalStudio::Body() {
     ImGuiIO& io = ImGui::GetIO();
+    auto now = std::chrono::system_clock::now();
+    auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(now - clock);
+    auto ms = milliseconds.count();
+    if (ms>300 && !playback.empty()) {
+        if (keyNoteIndex!=-1) {
+            Mix_HaltChannel(keyNotes[keyNoteIndex].channel);
+            keyNotes[keyNoteIndex].pressed = false;
+        }
+        clock = std::chrono::system_clock::now();
+        keyNoteIndex = (++keyNoteIndex)%playback.size();
+        PlaySound(playback[keyNoteIndex]);
+        keyNotes[keyNoteIndex].pressed = true;
 
+
+    }
+    printf("%d\n", ms);
     for (int i = 0; i < IM_ARRAYSIZE(io.KeysDown); i++) {
         if (ImGui::IsKeyPressed(i) && !keyNotes[i-30].pressed ) {
             keyNotes[i-30].pressed = true;
@@ -102,6 +120,7 @@ void MalStudio::Body() {
         if (ImGui::Button(keyNotes[i].label.c_str(), ImVec2(25.0f, 150.0f)))
         {
             PlaySound(keyNotes[i]);
+            playback.push_back(keyNotes[i]);
             printf("Pressed button: %s", keyNotes[i].label.c_str());
         }
         ImGui::PopStyleColor(1);

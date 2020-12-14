@@ -15,7 +15,6 @@
     <list default="true" id="b108c3e9-3ed3-45fe-a2f5-c15130c4e24e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Engine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/MalStudio/KeyNote.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/KeyNote.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
@@ -86,9 +85,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
@@ -108,7 +107,8 @@
       <workItem from="1607790697015" duration="1349000" />
       <workItem from="1607792056958" duration="1372000" />
       <workItem from="1607793448186" duration="27513000" />
-      <workItem from="1607864512909" duration="18695000" />
+      <workItem from="1607864512909" duration="18954000" />
+      <workItem from="1607938888690" duration="6167000" />
     </task>
     <servers />
   </component>

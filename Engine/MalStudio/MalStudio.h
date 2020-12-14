@@ -4,6 +4,10 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_mixer.h>
 #include <vector>
+#include <map>
+#include <ctime>
+#include <ratio>
+#include <chrono>
 #include "KeyNote.h"
 
 class MalStudio : public ChildWindow {
@@ -13,8 +17,12 @@ class MalStudio : public ChildWindow {
         int PlaySound(KeyNote keynote) const;
         void OnKeyInput();
 
+
     private:
         std::vector<KeyNote> keyNotes;
+        std::vector<KeyNote> playback;
+        std::chrono::time_point<std::chrono::system_clock>  clock;
+        int keyNoteIndex;
 
 };
 
