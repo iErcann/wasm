@@ -47,8 +47,8 @@ MalStudio::MalStudio(float x, float y, std::string title): ChildWindow(x, y, tit
     keys.push_back("b");
 
     int c = 0;
-    for (int j = 0; j <= 6; j++) {
-         for (int i = 0; i < keys.size(); i++) {
+    for (int j = 6; j >= 0; j--) {
+        for (int i = keys.size(); i >= 0; i--) {
              char fileName[20];
              std::sprintf(fileName, "%s%d.wav", keys[i].c_str(), j);
              char filePath[40];
@@ -106,17 +106,23 @@ void MalStudio::Body() {
             printf("KEY : %d, CHANNEL: %d\n", i, channel);
         } else if (ImGui::IsKeyReleased(i)){
             keyNotes[i-30].pressed = false;
-            Mix_HaltChannel(keyNotes[i-30].channel);
+            //Mix_HaltChannel(keyNotes[i-30].channel);
         }
     }
 
-
+      size_t width, height;
+    width = 150;
+    height = 25;
     for (int i = 0; i < keyNotes.size(); i++){
         bool up = keyNotes[i].label.length()>6;
         int b = keyNotes[i].pressed?150:255;
-        ImGui::SetCursorPos(ImVec2(i*30, up?0:100) );
-        ImGui::PushStyleColor(ImGuiCol_Button, IM_COL32(up?0:255, up?0:255, b, 255));
-        if (ImGui::Button(keyNotes[i].label.c_str(), ImVec2(25.0f, 150.0f)))
+        if (up) {
+            ImGui::SetCursorPos(ImVec2(0,  20*i) );
+        } else {
+            ImGui::SetCursorPos(ImVec2(100,  20*i) );
+        }
+        ImGui::PushStyleColor(ImGuiCol_Button, IM_COL32(up?100:255, up?100:255, b, 255));
+        if (ImGui::Button(keyNotes[i].label.c_str(), ImVec2(up?100.0f:width, height)))
         {
             PlaySound(keyNotes[i]);
             playback.push_back(keyNotes[i]);

@@ -7,3 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .data
+.out
+.vs
+.vscode

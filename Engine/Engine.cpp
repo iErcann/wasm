@@ -2,9 +2,6 @@
 #include <GLES3/gl3.h>
 #include <GLFW/glfw3.h>
 
-#include <SDL/SDL.h>
-#include <SDL/SDL_mixer.h>
-
 #include "imgui.h"
 #include "../imgui_impl_glfw.h"
 #include "../imgui_impl_opengl3.h"
@@ -13,33 +10,11 @@
 #include "Engine.h"
 #include "MalStudio/MalStudio.h"
 
-Mix_Chunk *sound, *sound2, *sound3;
-Mix_Music *music;
- 
-void done(int channel)
-{
-}
-
-int play3()
-{
-    int channel3 = Mix_PlayChannel(-1, sound3, 0);
-    return channel3;
-}
-int play2()
-{
-    int channel2 = Mix_PlayChannel(-1, sound2, 0);
-    return channel2;
-}
-
-int play()
-{
-    int channel = Mix_PlayChannel(-1, sound, 0);
-    return channel;
-}
 
 namespace MO3D
 {
-    Engine::Engine() : bRun(true), mWindow(NULL), mVideoWidth(1900), mVideoHeight(1000)
+    
+    Engine::Engine() : bRun(true), mWindow(NULL), mVideoWidth(3900), mVideoHeight(3000)
     {
     }
     void Engine::Initialize()
@@ -56,7 +31,7 @@ namespace MO3D
             glfwTerminate();
         }
         glfwMakeContextCurrent(mWindow); // Initialize GLEW
-                                         // Create game objects
+        // Create game objects
         // Setup Dear ImGui binding
         IMGUI_CHECKVERSION();
         ImGui::CreateContext();
@@ -76,15 +51,8 @@ namespace MO3D
         glfwSetKeyCallback(mWindow, ImGui_ImplGlfw_KeyCallback);
         glfwSetCharCallback(mWindow, ImGui_ImplGlfw_CharCallback);
 
-        SDL_Init(SDL_INIT_AUDIO);
         int ret = Mix_OpenAudio(0, 0, 0, 0); // we ignore all these..
 
-        sound = Mix_LoadWAV("data/hihat.wav");
-        sound2 = Mix_LoadWAV("data/snare.wav");
-        sound3 = Mix_LoadWAV("data/Space.wav");
-
-        int channel = play();
-        int paused = Mix_Paused(channel);
 
         for (float i = 0; i < 1; i++) {
             std::string s =  "ZEM OEM NOE";
@@ -97,6 +65,16 @@ namespace MO3D
 
 
 
+    }
+    void tutoRender(){
+        float vertices[] = {
+                -0.5f, -0.5f, 0.0f,
+                0.5f, -0.5f, 0.0f,
+                0.0f,  0.5f, 0.0f
+        };
+
+        unsigned int VBO;
+        glGenBuffers(1, &VBO);
     }
     void Engine::Update()
     {
@@ -121,11 +99,13 @@ namespace MO3D
         glfwMakeContextCurrent(mWindow);
         glfwGetFramebufferSize(mWindow, &display_w, &display_h);
         glViewport(0, 0, display_w, display_h);
-        glClearColor(33, 16, 56, 0);
+        glClearColor(0.1f, 0.1f, 0.1f, 0);
         glClear(GL_COLOR_BUFFER_BIT);
 
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwMakeContextCurrent(mWindow);
+        glfwSwapBuffers(mWindow);
+
     }
     void Engine::Quit()
     {

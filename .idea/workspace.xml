@@ -13,15 +13,142 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b108c3e9-3ed3-45fe-a2f5-c15130c4e24e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/cache-stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/cache-stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/deleted-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/deleted-files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/object-id-map.old-new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/object-id-map.old-new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ncr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ncr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Audio/AudioPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Audio/AudioPlayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Audio/AudioPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Audio/AudioPlayer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/MalStudio/KeyNote.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/KeyNote.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MalStudio/MalStudio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Window/ChildWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Window/ChildWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Window/ChildWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Window/ChildWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Space.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/Space.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hihat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/hihat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/piano.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/piano.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a-1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/a6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/a6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as-1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/as6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/as6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b-1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/b6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/b6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/c7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/c7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/cs6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/cs6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/d6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/d6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/ds6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/ds6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/e6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/e6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/f6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/f6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/fs6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/fs6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/g6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/g6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pianoMPP/gs6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/gs6.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/pianoMPP/rename.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/rename.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/snare.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/snare.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/xkcd-script.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/xkcd-script.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.data" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.html" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.html.mem" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.html.mem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.js.mem" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.js.mem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_glfw.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_glfw.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_opengl3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_opengl3.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/launchServer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/launchServer.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.raw" beforeDir="false" afterPath="$PROJECT_DIR$/output.raw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +162,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,7 +246,7 @@
       <workItem from="1607793448186" duration="27513000" />
       <workItem from="1607864512909" duration="18954000" />
       <workItem from="1607938888690" duration="6167000" />
-      <workItem from="1608023797045" duration="2688000" />
+      <workItem from="1608023797045" duration="9688000" />
     </task>
     <servers />
   </component>
