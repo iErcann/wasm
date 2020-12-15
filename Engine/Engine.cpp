@@ -15,7 +15,7 @@
 
 Mix_Chunk *sound, *sound2, *sound3;
 Mix_Music *music;
-
+ 
 void done(int channel)
 {
 }

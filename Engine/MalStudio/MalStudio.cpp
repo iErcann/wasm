@@ -112,11 +112,10 @@ void MalStudio::Body() {
 
 
     for (int i = 0; i < keyNotes.size(); i++){
-        ImGui::SameLine(i*30);
-        std::string label =  std::to_string(i);
-
+        bool up = keyNotes[i].label.length()>6;
         int b = keyNotes[i].pressed?150:255;
-        ImGui::PushStyleColor(ImGuiCol_Button, IM_COL32(255, 255, b, 255));
+        ImGui::SetCursorPos(ImVec2(i*30, up?0:100) );
+        ImGui::PushStyleColor(ImGuiCol_Button, IM_COL32(up?0:255, up?0:255, b, 255));
         if (ImGui::Button(keyNotes[i].label.c_str(), ImVec2(25.0f, 150.0f)))
         {
             PlaySound(keyNotes[i]);
