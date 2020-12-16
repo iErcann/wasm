@@ -13,9 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b108c3e9-3ed3-45fe-a2f5-c15130c4e24e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/cache-stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/cache-stats.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/deleted-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/deleted-files.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/object-id-map.old-new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/object-id-map.old-new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/cache-stats.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/deleted-files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.bfg-report/2020-12-14/16-58-28/object-id-map.old-new.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ncr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ncr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -37,9 +37,9 @@
       <change beforePath="$PROJECT_DIR$/Engine/Window/ChildWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Window/ChildWindow.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Common/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Common/config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Space.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/Space.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/hello.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/hihat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/hihat.wav" afterDir="false" />
@@ -135,20 +135,18 @@
       <change beforePath="$PROJECT_DIR$/data/pianoMPP/rename.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/pianoMPP/rename.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/snare.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/snare.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/xkcd-script.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/xkcd-script.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.data" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.html" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.html.mem" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.html.mem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.js" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.js.mem" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.js.mem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.wasm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_glfw.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_glfw.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_opengl3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/imgui_impl_opengl3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.html.mem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.js.mem" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui.js.mem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui_impl_glfw.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui_impl_glfw.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui_impl_opengl3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Imgui/imgui_impl_opengl3.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/launchServer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/launchServer.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.raw" beforeDir="false" afterPath="$PROJECT_DIR$/output.raw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.raw" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,10 +219,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\ncr\code\wasm\myown\WebGui\Dist" />
+      <recent name="\\wsl$\Debian\home\ncr\code\wasm\myown\WebGui\Engine\Common" />
+      <recent name="\\wsl$\Debian\home\ncr\code\wasm\myown\WebGui\Imgui" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
@@ -247,6 +252,7 @@
       <workItem from="1607864512909" duration="18954000" />
       <workItem from="1607938888690" duration="6167000" />
       <workItem from="1608023797045" duration="9688000" />
+      <workItem from="1608110799180" duration="1653000" />
     </task>
     <servers />
   </component>

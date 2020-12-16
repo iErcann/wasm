@@ -1,2 +1,0 @@
-
-void Windows95Theme();

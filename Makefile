@@ -1,9 +1,10 @@
 CXX = emcc
-OUTPUT = imgui.js
+OUTPUT = Dist/main.js
 IMGUI_DIR:=../imgui
+LOCAL_IMGUI_DIR:=./Imgui
 
-SOURCES = App.cpp Engine/Engine.cpp Engine/Audio/AudioPlayer.cpp Engine/Window/ChildWindow.cpp Engine/MalStudio/MalStudio.cpp config.cpp
-SOURCES += imgui_impl_glfw.cpp imgui_impl_opengl3.cpp
+SOURCES = App.cpp Engine/Engine.cpp Engine/Audio/AudioPlayer.cpp Engine/Window/ChildWindow.cpp Engine/MalStudio/MalStudio.cpp Engine/Common/config.cpp
+SOURCES += $(LOCAL_IMGUI_DIR)/imgui_impl_glfw.cpp $(LOCAL_IMGUI_DIR)/imgui_impl_opengl3.cpp
 SOURCES += $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_demo.cpp $(IMGUI_DIR)/imgui_widgets.cpp
 
 LIBS = -lGL

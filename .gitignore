@@ -6,7 +6,42 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-.data
-.out
-.vs
-.vscode
+*.data
+*.out
+*.vs
+*.vscode
+*.vscode
+*.wasm
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
